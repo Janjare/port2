@@ -1,0 +1,282 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #191919; /* Adjust as needed */
+    color: white;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px; /* Adjust spacing between items */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: brown; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px; /* Adjust font size */
+}
+
+h3 {
+    font-size: 24px; /* Adjust font size */
+}
+
+.newsletter {
+    margin-top: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column; /* Stack input fields */
+    align-items: center; /* Center align inputs */
+}
+
+input[type="email"], input[type="submit"] {
+    padding: 10px;
+    margin: 5px;
+    width: 80%; /* Responsive width for inputs */
+    max-width: 300px; /* Limit maximum width */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Stack nav items */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        width: 100%; /* Full width */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing */
+    }
+
+    h1 {
+        font-size: 28px; /* Smaller for mobile */
+    }
+
+    h3 {
+        font-size: 20px; /* Smaller for mobile */
+    }
+
+    .btn {
+        width: 100%; /* Full width button */
+        margin-top: 10px; /* Space above button */
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.main {
+    display: flex;
+    flex-direction: column; /* Stack on small screens */
+    align-items: center;
+    text-align: center;
+}
+
+.main img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.aboutus {
+    margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Service Section */
+.service{
+    padding: 20px;
+    text-align: center;
+    color: #191919;
+    background: #white;
+}
+.skill {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: #333;
+}
+
+/* Skills Section */
+.box {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    justify-content: center; /* Center align cards */
+}
+
+.card {
+    background: #191919;
+    border: 1px solid #191919;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(30% - 40px); /* Adjust width for responsiveness */
+    text-align: center;
+}
+
+.card i {
+    font-size: 30px; /* Icon size */
+}
+.card a{
+  list-style-type: none;
+  text-decoration: none;
+  color: brown;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 20px;
+}
+
+.button-two {
+    padding: 10px 20px;
+    background-color: brown; /* Change button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .card {
+        width: calc(45% - 20px); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Full width on very small screens */
+    }
+
+    .aboutus {
+        margin-top: 10px; /* Reduce margin on small screens */
+    }
+}
+
+footer {
+    background-color: #333; /* Background color */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding around content */
+}
+
+footer p {
+    margin: 5px 0; /* Margin for paragraphs */
+}
+
+.social {
+    display: flex; /* Use flexbox for social icons */
+    justify-content: center; /* Center align icons */
+    margin-top: 10px; /* Space above social icons */
+}
+
+.social a {
+    color: white; /* Icon color */
+    margin: 0 10px; /* Space between icons */
+    text-decoration: none; /* Remove underline */
+    font-size: 24px; /* Size of icons */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    footer {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .social a {
+        font-size: 20px; /* Reduce icon size on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 10px; /* Further adjust padding */
+    }
+
+    .social a {
+        margin: 0 5px; /* Reduce space between icons */
+    }
+}
